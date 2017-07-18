@@ -12,7 +12,9 @@ $(document).ready(function () {
         var content = $('.chatlogs').html();
 
         $('.chatlogs').html(content + "<div class='chat user'><div class='user-picture'><img src='img/Chat.svg' alt='picture'></div><p class='chat-message'>" + msg + "</p></div>");
-        $('.chatlogs').html(content + "<div class='chat friend response'><div class='user-picture'><img src='img/Chat.svg' alt='picture'></div><p class='chat-message'>" + response + "</p></div>");
-        $('.response').hide(0).delay(5000).show(200)
-    });
+        setTimeout(function(){
+            $('.chatlogs').html(content + "<div class='chat friend'><div class='user-picture'><img src='img/Chat.svg' alt='picture'></div><p class='chat-message'>" + response + "</p></div>").show();
+            },5000);
+        });
+
 });
