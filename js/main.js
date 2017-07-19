@@ -8,7 +8,7 @@ var messages = [
     "give me five!"
 ];
 var username = prompt('Quel est ton pseudo?');
-var insert = function(){
+var insert = function () {
     var response = messages[Math.floor(Math.random() * messages.length)];
     var msg = $('textarea').val();
     var wait = "<div class='end'><div class='bubble wait'></div><div class='bubble waitInverse'></div><div class='bubble wait'></div></div>";
@@ -28,10 +28,7 @@ $('button').click(function () {
     insert();
 });
 $("textarea").keyup(function (e) {
-
     if (e.keyCode == 13) {
-
         insert();
-
     }
 });
