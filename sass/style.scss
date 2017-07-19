@@ -14,12 +14,11 @@
 }
 
 body {
-  background: #1ddced;
+  background: #E0E0E0;
 }
 
 .chatbox {
-  width: 500px;
-  min-width: 390px;
+  width: 50%;
   height: 600px;
   background: #fff;
   padding: 25px;
@@ -115,5 +114,27 @@ body {
         background: #13c8d9;
       }
     }
+  }
+  .bubble{
+    display: inline-block;
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background-color: black;
+  }
+  .wait{
+    animation: bounce 0.7s ease infinite alternate;
+  }
+  .waitInverse{
+    animation: bounceReverse 0.7s ease infinite alternate;
+  }
+  @keyframes bounceReverse {
+    from {transform: translateY(0);}
+    to   {transform: translateY(-10px);}
+  }
+
+  @keyframes bounce{
+    from {transform: translateY(0);}
+    to   {transform: translateY(-15px);}
   }
 }

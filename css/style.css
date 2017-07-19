@@ -3,7 +3,7 @@
  * Import this file using the following HTML or equivalent:
  * <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css" /> */
 @import url("https://fonts.googleapis.com/css?family=Open+Sans");
-/* line 5, ../../../../../../../../../usr/lib/ruby/gems/2.4.0/gems/compass-1.0.3/vendor/bundle/ruby/2.4.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+/* line 5, ../../../../../../usr/lib/ruby/gems/2.4.0/gems/compass-1.0.3/vendor/bundle/ruby/2.4.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
 html, body, div, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
 a, abbr, acronym, address, big, cite, code,
@@ -25,45 +25,45 @@ time, mark, audio, video {
   vertical-align: baseline;
 }
 
-/* line 22, ../../../../../../../../../usr/lib/ruby/gems/2.4.0/gems/compass-1.0.3/vendor/bundle/ruby/2.4.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+/* line 22, ../../../../../../usr/lib/ruby/gems/2.4.0/gems/compass-1.0.3/vendor/bundle/ruby/2.4.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
 html {
   line-height: 1;
 }
 
-/* line 24, ../../../../../../../../../usr/lib/ruby/gems/2.4.0/gems/compass-1.0.3/vendor/bundle/ruby/2.4.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+/* line 24, ../../../../../../usr/lib/ruby/gems/2.4.0/gems/compass-1.0.3/vendor/bundle/ruby/2.4.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
 ol, ul {
   list-style: none;
 }
 
-/* line 26, ../../../../../../../../../usr/lib/ruby/gems/2.4.0/gems/compass-1.0.3/vendor/bundle/ruby/2.4.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+/* line 26, ../../../../../../usr/lib/ruby/gems/2.4.0/gems/compass-1.0.3/vendor/bundle/ruby/2.4.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
 table {
   border-collapse: collapse;
   border-spacing: 0;
 }
 
-/* line 28, ../../../../../../../../../usr/lib/ruby/gems/2.4.0/gems/compass-1.0.3/vendor/bundle/ruby/2.4.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+/* line 28, ../../../../../../usr/lib/ruby/gems/2.4.0/gems/compass-1.0.3/vendor/bundle/ruby/2.4.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
 caption, th, td {
   text-align: left;
   font-weight: normal;
   vertical-align: middle;
 }
 
-/* line 30, ../../../../../../../../../usr/lib/ruby/gems/2.4.0/gems/compass-1.0.3/vendor/bundle/ruby/2.4.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+/* line 30, ../../../../../../usr/lib/ruby/gems/2.4.0/gems/compass-1.0.3/vendor/bundle/ruby/2.4.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
 q, blockquote {
   quotes: none;
 }
-/* line 103, ../../../../../../../../../usr/lib/ruby/gems/2.4.0/gems/compass-1.0.3/vendor/bundle/ruby/2.4.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+/* line 103, ../../../../../../usr/lib/ruby/gems/2.4.0/gems/compass-1.0.3/vendor/bundle/ruby/2.4.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
 q:before, q:after, blockquote:before, blockquote:after {
   content: "";
   content: none;
 }
 
-/* line 32, ../../../../../../../../../usr/lib/ruby/gems/2.4.0/gems/compass-1.0.3/vendor/bundle/ruby/2.4.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+/* line 32, ../../../../../../usr/lib/ruby/gems/2.4.0/gems/compass-1.0.3/vendor/bundle/ruby/2.4.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
 a img {
   border: none;
 }
 
-/* line 116, ../../../../../../../../../usr/lib/ruby/gems/2.4.0/gems/compass-1.0.3/vendor/bundle/ruby/2.4.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+/* line 116, ../../../../../../usr/lib/ruby/gems/2.4.0/gems/compass-1.0.3/vendor/bundle/ruby/2.4.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
 article, aside, details, figcaption, figure, footer, header, hgroup, main, menu, nav, section, summary {
   display: block;
 }
@@ -78,20 +78,19 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
 
 /* line 16, ../sass/style.scss */
 body {
-  background: #1ddced;
+  background: #E0E0E0;
 }
 
 /* line 20, ../sass/style.scss */
 .chatbox {
-  width: 500px;
-  min-width: 390px;
+  width: 50%;
   height: 600px;
   background: #fff;
   padding: 25px;
   margin: 20px auto;
   box-shadow: 0 3px #ccc;
 }
-/* line 28, ../sass/style.scss */
+/* line 27, ../sass/style.scss */
 .chatbox .chatlogs {
   padding: 10px;
   width: 100%;
@@ -100,23 +99,23 @@ body {
   overflow-x: hidden;
   overflow-y: scroll;
 }
-/* line 36, ../sass/style.scss */
+/* line 35, ../sass/style.scss */
 .chatbox .chatlogs::-webkit-scrollbar {
   width: 10px;
 }
-/* line 39, ../sass/style.scss */
+/* line 38, ../sass/style.scss */
 .chatbox .chatlogs::-webkit-scrollbar-thumb {
   border-radius: 5px;
   background: rgba(0, 0, 0, 0.1);
 }
-/* line 43, ../sass/style.scss */
+/* line 42, ../sass/style.scss */
 .chatbox .chat {
   display: flex;
   flex-flow: row wrap;
   align-items: flex-start;
   margin-bottom: 10px;
 }
-/* line 48, ../sass/style.scss */
+/* line 47, ../sass/style.scss */
 .chatbox .chat .user-picture {
   width: 60px;
   height: 60px;
@@ -124,11 +123,11 @@ body {
   border-radius: 50%;
   overflow: hidden;
 }
-/* line 54, ../sass/style.scss */
+/* line 53, ../sass/style.scss */
 .chatbox .chat .user-picture img {
   width: 100%;
 }
-/* line 58, ../sass/style.scss */
+/* line 57, ../sass/style.scss */
 .chatbox .chat .chat-message {
   width: 80%;
   padding: 15px;
@@ -137,22 +136,22 @@ body {
   color: #fff;
   font-size: 18px;
 }
-/* line 68, ../sass/style.scss */
+/* line 67, ../sass/style.scss */
 .chatbox .friend .chat-message {
   background: #1adda4;
 }
-/* line 73, ../sass/style.scss */
+/* line 72, ../sass/style.scss */
 .chatbox .user .chat-message {
   order: -1;
   background: #1ddced;
 }
-/* line 78, ../sass/style.scss */
+/* line 77, ../sass/style.scss */
 .chatbox .chat-form {
   margin-top: 20px;
   display: flex;
   align-items: flex-start;
 }
-/* line 82, ../sass/style.scss */
+/* line 81, ../sass/style.scss */
 .chatbox .chat-form textarea {
   background: #fbfbfb;
   width: 75%;
@@ -164,20 +163,20 @@ body {
   font-size: 18px;
   color: #999;
 }
-/* line 92, ../sass/style.scss */
+/* line 91, ../sass/style.scss */
 .chatbox .chat-form textarea:focus {
   background: #fff;
 }
-/* line 96, ../sass/style.scss */
+/* line 95, ../sass/style.scss */
 .chatbox .chat-form textarea::-webkit-scrollbar {
   width: 10px;
 }
-/* line 99, ../sass/style.scss */
+/* line 98, ../sass/style.scss */
 .chatbox .chat-form textarea::-webkit-scrollbar-thumb {
   border-radius: 5px;
   background: rgba(0, 0, 0, 0.1);
 }
-/* line 105, ../sass/style.scss */
+/* line 104, ../sass/style.scss */
 .chatbox .chat-form button {
   background: #1ddced;
   padding: 5px 15px;
@@ -191,7 +190,39 @@ body {
   -webkit-transition: background 0.2s ease;
   transition: background 0.2s ease;
 }
-/* line 114, ../sass/style.scss */
+/* line 113, ../sass/style.scss */
 .chatbox .chat-form button:hover {
   background: #13c8d9;
+}
+/* line 118, ../sass/style.scss */
+.chatbox .bubble {
+  display: inline-block;
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background-color: black;
+}
+/* line 125, ../sass/style.scss */
+.chatbox .wait {
+  animation: bounce 0.7s ease infinite alternate;
+}
+/* line 128, ../sass/style.scss */
+.chatbox .waitInverse {
+  animation: bounceReverse 0.7s ease infinite alternate;
+}
+@keyframes bounceReverse {
+  from {
+    transform: translateY(0);
+  }
+  to {
+    transform: translateY(-10px);
+  }
+}
+@keyframes bounce {
+  from {
+    transform: translateY(0);
+  }
+  to {
+    transform: translateY(-15px);
+  }
 }
