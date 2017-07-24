@@ -13,15 +13,21 @@ var messages = [
     "I would do whatever you want...little kitten",
     "let's go now?",
 ];
-
-
-var username = prompt('Quel est ton pseudo?');
+$('.chatbox').hide();
+$('#start').click(function(){
+    $('.name').hide();
+    $('.chatbox').show('slow');
+});
 function insert() {
+
+    $(".chatlogs").animate({
+        scrollTop: $(".chatlogs").get(0).scrollHeight
+    }, 2000);
     index++;
     var message = messages[index];
     var msg = $('textarea').val();
     var wait = "<div class='end'><div class='bubble wait'></div><div class='bubble waitInverse'></div><div class='bubble wait'></div></div>";
-    var user = "<div class='chat user'><div class='user-picture'><img src='img/Chat.svg' alt='picture'></div><p class='chat-message'>" + username + " dit: " + msg + "</p></div>";
+    var user = "<div class='chat user'><div class='user-picture'><img src='img/Chat.svg' alt='picture'></div><p class='chat-message'>" + $('#name').val() + " dit: " + msg + "</p></div>";
     var friend = "<div class='chat friend'><div class='user-picture'><img src='img/Chat.svg' alt='picture'></div><p class='chat-message'>" + message + "</p></div>";
     $('.chatlogs').append(user);
     $('.chatlogs').append(wait);
