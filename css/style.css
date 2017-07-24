@@ -90,7 +90,11 @@ body {
   margin: 20px auto;
   box-shadow: 0 3px #ccc;
 }
-/* line 27, ../sass/style.scss */
+/* line 21, ../sass/style.scss */
+.chatbox .title {
+  text-align: center;
+}
+/* line 30, ../sass/style.scss */
 .chatbox .chatlogs {
   padding: 10px;
   width: 100%;
@@ -99,23 +103,23 @@ body {
   overflow-x: hidden;
   overflow-y: scroll;
 }
-/* line 35, ../sass/style.scss */
+/* line 38, ../sass/style.scss */
 .chatbox .chatlogs::-webkit-scrollbar {
   width: 10px;
 }
-/* line 38, ../sass/style.scss */
+/* line 41, ../sass/style.scss */
 .chatbox .chatlogs::-webkit-scrollbar-thumb {
   border-radius: 5px;
   background: rgba(0, 0, 0, 0.1);
 }
-/* line 42, ../sass/style.scss */
+/* line 45, ../sass/style.scss */
 .chatbox .chat {
   display: flex;
   flex-flow: row wrap;
   align-items: flex-start;
   margin-bottom: 10px;
 }
-/* line 47, ../sass/style.scss */
+/* line 50, ../sass/style.scss */
 .chatbox .chat .user-picture {
   width: 60px;
   height: 60px;
@@ -123,11 +127,11 @@ body {
   border-radius: 50%;
   overflow: hidden;
 }
-/* line 53, ../sass/style.scss */
+/* line 56, ../sass/style.scss */
 .chatbox .chat .user-picture img {
   width: 100%;
 }
-/* line 57, ../sass/style.scss */
+/* line 60, ../sass/style.scss */
 .chatbox .chat .chat-message {
   width: 80%;
   padding: 15px;
@@ -136,22 +140,22 @@ body {
   color: #fff;
   font-size: 18px;
 }
-/* line 67, ../sass/style.scss */
+/* line 70, ../sass/style.scss */
 .chatbox .friend .chat-message {
   background: #1adda4;
 }
-/* line 72, ../sass/style.scss */
+/* line 75, ../sass/style.scss */
 .chatbox .user .chat-message {
   order: -1;
   background: #1ddced;
 }
-/* line 77, ../sass/style.scss */
+/* line 80, ../sass/style.scss */
 .chatbox .chat-form {
   margin-top: 20px;
   display: flex;
   align-items: flex-start;
 }
-/* line 81, ../sass/style.scss */
+/* line 84, ../sass/style.scss */
 .chatbox .chat-form textarea {
   background: #fbfbfb;
   width: 75%;
@@ -163,20 +167,20 @@ body {
   font-size: 18px;
   color: #999;
 }
-/* line 91, ../sass/style.scss */
+/* line 94, ../sass/style.scss */
 .chatbox .chat-form textarea:focus {
   background: #fff;
 }
-/* line 95, ../sass/style.scss */
+/* line 98, ../sass/style.scss */
 .chatbox .chat-form textarea::-webkit-scrollbar {
   width: 10px;
 }
-/* line 98, ../sass/style.scss */
+/* line 101, ../sass/style.scss */
 .chatbox .chat-form textarea::-webkit-scrollbar-thumb {
   border-radius: 5px;
   background: rgba(0, 0, 0, 0.1);
 }
-/* line 104, ../sass/style.scss */
+/* line 107, ../sass/style.scss */
 .chatbox .chat-form button {
   background: #1ddced;
   padding: 5px 15px;
@@ -190,11 +194,11 @@ body {
   -webkit-transition: background 0.2s ease;
   transition: background 0.2s ease;
 }
-/* line 113, ../sass/style.scss */
+/* line 116, ../sass/style.scss */
 .chatbox .chat-form button:hover {
   background: #13c8d9;
 }
-/* line 118, ../sass/style.scss */
+/* line 121, ../sass/style.scss */
 .chatbox .bubble {
   display: inline-block;
   width: 10px;
@@ -202,11 +206,11 @@ body {
   border-radius: 50%;
   background-color: black;
 }
-/* line 125, ../sass/style.scss */
+/* line 128, ../sass/style.scss */
 .chatbox .wait {
   animation: bounce 0.7s ease infinite alternate;
 }
-/* line 128, ../sass/style.scss */
+/* line 131, ../sass/style.scss */
 .chatbox .waitInverse {
   animation: bounceReverse 0.7s ease infinite alternate;
 }

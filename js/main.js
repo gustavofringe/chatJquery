@@ -1,19 +1,28 @@
+var index = -1;
 var messages = [
-    "Hello!",
-    "what do you want?",
-    "RTFM!!!",
-    "You are so nice...",
-    "Help me please",
-    "Jquery for life",
-    "give me five!"
+    "Hello !",
+    "you are stupid?",
+    "Are you free to dine tonight ?",
+    "I'll pick you up...",
+    "My little kitten, you are so sweet !",
+    "your hair is very soft",
+    "do you want a hug ?",
+    "you are very nice gentleman",
+    "have you got a girlfriend?",
+    "do you want a relationship with me?",
+    "I would do whatever you want...little kitten",
+    "let's go now?",
 ];
+
+
 var username = prompt('Quel est ton pseudo?');
-var insert = function () {
-    var response = messages[Math.floor(Math.random() * messages.length)];
+function insert() {
+    index++;
+    var message = messages[index];
     var msg = $('textarea').val();
     var wait = "<div class='end'><div class='bubble wait'></div><div class='bubble waitInverse'></div><div class='bubble wait'></div></div>";
     var user = "<div class='chat user'><div class='user-picture'><img src='img/Chat.svg' alt='picture'></div><p class='chat-message'>" + username + " dit: " + msg + "</p></div>";
-    var friend = "<div class='chat friend'><div class='user-picture'><img src='img/Chat.svg' alt='picture'></div><p class='chat-message'>" + response + "</p></div>";
+    var friend = "<div class='chat friend'><div class='user-picture'><img src='img/Chat.svg' alt='picture'></div><p class='chat-message'>" + message + "</p></div>";
     $('.chatlogs').append(user);
     $('.chatlogs').append(wait);
     setTimeout(function () {
@@ -26,9 +35,15 @@ var insert = function () {
 }
 $('button').click(function () {
     insert();
+    $(".chatlogs").animate({
+        scrollTop: $(".chatlogs").get(0).scrollHeight
+    }, 2000);
 });
 $("textarea").keyup(function (e) {
     if (e.keyCode == 13) {
         insert();
+        $(".chatlogs").animate({
+            scrollTop: $(".chatlogs").get(0).scrollHeight
+        }, 1000);
     }
 });
