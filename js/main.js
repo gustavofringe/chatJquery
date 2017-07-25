@@ -2,7 +2,7 @@
  *
  *
  * VARIABLES
- * @type {number}
+ * @type {number, string}
  */
 var index = -1;
 var messages = [
