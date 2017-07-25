@@ -21,7 +21,7 @@ body {
   .title{
     text-align: center;
   }
-  width: 50%;
+  width: 90%;
   height: 600px;
   background: #fff;
   padding: 25px;
@@ -48,17 +48,19 @@ body {
     align-items: flex-start;
     margin-bottom: 10px;
     .user-picture {
-      width: 60px;
+      display: none;
+      /*width: 60px;
       height: 60px;
       background: #ccc;
       border-radius: 50%;
-      overflow: hidden;
+      overflow: hidden;*/
       img{
-        width: 100%;
+        display: none;
+        //width: 100%;
       }
     }
     .chat-message {
-      width: 80%;
+      width: 100%;
       padding: 15px;
       margin: 5px 10px 0;
       border-radius: 10px;
@@ -118,12 +120,24 @@ body {
       }
     }
   }
-  .bubble{
-    display: inline-block;
-    width: 10px;
-    height: 10px;
-    border-radius: 50%;
-    background-color: black;
+  .end {
+    padding: 0;
+    margin: 0;
+    width: 49px;
+    height: 20px;
+    border-radius: 3px;
+    background: gray;
+    .bubble {
+      padding: 0;
+      bottom: 0;
+      margin: 3px;
+      opacity: 0.5;
+      display: inline-block;
+      width: 10px;
+      height: 10px;
+      border-radius: 50%;
+      background-color: black;
+    }
   }
   .wait{
     animation: bounce 0.7s ease infinite alternate;
@@ -133,11 +147,12 @@ body {
   }
   @keyframes bounceReverse {
     from {transform: translateY(0);}
-    to   {transform: translateY(-10px);}
+    to   {transform: translateY(3px);}
   }
 
   @keyframes bounce{
     from {transform: translateY(0);}
-    to   {transform: translateY(-15px);}
+    to   {transform: translateY(-3px);}
   }
 }
+@import'tablet';

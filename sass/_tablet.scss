@@ -1,0 +1,20 @@
+/*=========================================================
+tablet landscape format
+========================================================== */
+@media screen and (min-width: 1024px){
+  .chatbox {
+    .chat {
+
+      .user-picture {
+        width: 60px;
+        height: 60px;
+        background: #ccc;
+        border-radius: 50%;
+        overflow: hidden;
+        img {
+          width: 100%;
+        }
+      }
+    }
+  }
+}

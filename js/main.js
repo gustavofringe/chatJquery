@@ -1,3 +1,9 @@
+/**
+ *
+ *
+ * VARIABLES
+ * @type {number}
+ */
 var index = -1;
 var messages = [
     "Hello !",
@@ -13,16 +19,44 @@ var messages = [
     "I would do whatever you want...little kitten",
     "let's go now?",
 ];
-$('.chatbox').hide();
+//==================================================ACTION
+/**
+ *
+ * start talk after hide form
+ *
+ *
+ */
+/*$('.chatbox').hide();
 $('#start').click(function(){
     $('.name').hide();
     $('.chatbox').show('slow');
-});
-function insert() {
-
+});*/
+/**
+ *
+ * action for click & enter to send message
+ *
+ */
+$('#send').click(function () {
+    insert();
     $(".chatlogs").animate({
         scrollTop: $(".chatlogs").get(0).scrollHeight
     }, 2000);
+});
+$("textarea").keyup(function (e) {
+    if (e.keyCode == 13) {
+        insert();
+        $(".chatlogs").animate({
+            scrollTop: $(".chatlogs").get(0).scrollHeight
+        }, 1000);
+    }
+});
+/**
+ *
+ * function insert
+ * @return dialog
+ *
+ */
+function insert() {
     index++;
     var message = messages[index];
     var msg = $('textarea').val();
@@ -39,17 +73,4 @@ function insert() {
     }, 3000);
     $('textarea').val('');
 }
-$('button').click(function () {
-    insert();
-    $(".chatlogs").animate({
-        scrollTop: $(".chatlogs").get(0).scrollHeight
-    }, 2000);
-});
-$("textarea").keyup(function (e) {
-    if (e.keyCode == 13) {
-        insert();
-        $(".chatlogs").animate({
-            scrollTop: $(".chatlogs").get(0).scrollHeight
-        }, 1000);
-    }
-});
+
