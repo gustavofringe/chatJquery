@@ -6,12 +6,14 @@ tablet landscape format
     .chat {
 
       .user-picture {
+        display: block;
         width: 60px;
         height: 60px;
         background: #ccc;
         border-radius: 50%;
         overflow: hidden;
         img {
+          display: block;
           width: 100%;
         }
       }
