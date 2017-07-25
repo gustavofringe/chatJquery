@@ -26,11 +26,11 @@ var messages = [
  *
  *
  */
-/*$('.chatbox').hide();
+$('.chatbox').hide();
 $('#start').click(function(){
     $('.name').hide();
     $('.chatbox').show('slow');
-});*/
+});
 /**
  *
  * action for click & enter to send message
